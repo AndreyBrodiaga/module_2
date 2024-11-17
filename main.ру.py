@@ -6,9 +6,11 @@ print(9.99 > 9.98 and 1000 != 1000.1)
 
 
 # 3rd program
-print(2 * 2 + 2)
-print(2 * (2 + 2))
-(2 * 2 + 2) == (2 * (2 + 2))
+exp = 2 * 2 + 2
+print(exp)
+exp_1 = 2 * (2 + 2)
+print(exp_1)
+print(exp == exp_1)
 
 # 4th program
 str_point = '123.456'
