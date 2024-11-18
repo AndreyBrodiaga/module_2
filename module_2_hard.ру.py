@@ -24,3 +24,4 @@ result_string = ''.join(f"{a}{b}" for a, b in result_pairs)
 
 
 print(result_string)
+
