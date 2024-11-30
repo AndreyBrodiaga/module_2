@@ -1,4 +1,3 @@
-
 calls = 0
 
 
@@ -10,7 +9,7 @@ def count_calls():
 def string_info(string):
     count_calls()
 
-    return len(string), string.upper(), string.lower()
+    return  string.upper(), string.lower()
 
 
 def is_contains(string, list_to_search):
@@ -24,5 +23,8 @@ is_contains("world", ["World", "Python"])
 string_info("Example")
 is_contains("example", ["EXAMPLE", "TEST"])
 
-
-print(f"Всего было {calls} вызова.")
+print(string_info('Capibara'))
+print(string_info('Armageddon'))
+print('Urban',['ban','BaNaN','urBAN'])
+print(is_contains('cycle',['recycling','cylic']))
+print(f"{calls} ")
