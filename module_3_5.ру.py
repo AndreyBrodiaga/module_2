@@ -1,4 +1,4 @@
-def product_of_digits(number):
+def get_multiplied_digits(number):
     number_str = str(number)
     
     non_zero_digits = [int(digit) for digit in number_str if digit != '0']
@@ -16,6 +16,6 @@ def product_of_digits(number):
 
 result1 = get_multiplied_digits(40203)
 print(result1)
-result2 = get_multiplied_digits(123450)
+result2 = get_multiplied_digits(402030)
 print(result2)
 
