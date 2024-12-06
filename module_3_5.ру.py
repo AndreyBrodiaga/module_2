@@ -1,19 +1,17 @@
-
-def get_multiplied_digits(number):
-    str_number = str(abs(number))
-
-    if not str_number or set(str_number) == {'0'}:
+def product_of_digits(number):
+    number_str = str(number)
+    
+    non_zero_digits = [int(digit) for digit in number_str if digit != '0']
+    
+    if not non_zero_digits:
         return 0
 
-    first = int(str_number[0])
+    result = 1
+    for digit in non_zero_digits:
+        result *= digit
+        
+    return result
 
-    if first == 0:
-        return get_multiplied_digits(int(str_number[1:]))
-
-    if len(str_number) > 1:
-        return first * get_multiplied_digits(int(str_number[1:]))
-    else:
-        return first
 
 
 result1 = get_multiplied_digits(40203)
